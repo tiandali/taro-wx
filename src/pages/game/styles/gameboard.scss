@@ -1,0 +1,157 @@
+// @import '../../../config/config.scss';
+@import '~taro-ui/dist/style/components/flex.scss';
+
+$gameBorderColor: #191B32;
+$pauseGameBorderColor: #dcdde0;
+.game-wrapper {
+  width: 100%;
+  height: 100%;
+  // margin: 10px auto;
+  position: relative;
+  box-sizing: border-box;
+  .game-outer {
+    height: 100%;
+    .game-board {
+      box-sizing: border-box;
+      // border: 2PX solid $gameBorderColor;
+      user-select: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 1PX;
+      &::after {
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        content: '';
+        position: absolute;
+        left: 33.3333%;
+        width: 33.5%;
+        top: 0;
+        border-left: 2PX solid $gameBorderColor;
+        border-right: 2PX solid $gameBorderColor;
+        pointer-events: none;
+        margin-left: -1PX;
+      }
+      &::before {
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 0;
+        border-left: 2PX solid $gameBorderColor;
+        border-right: 2PX solid $gameBorderColor;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .out-box {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        &::after {
+          box-sizing: border-box;
+          width: 100%;
+          display: block;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 33.3333%;
+          height: 33.5%;
+          border-top: 2PX solid $gameBorderColor;
+          border-bottom: 2PX solid $gameBorderColor;
+          pointer-events: none;
+          margin-top: -1PX;
+        }
+        &::before {
+          box-sizing: border-box;
+          width: 100%;
+          display: block;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          border-top: 2PX solid $gameBorderColor;
+          border-bottom: 2PX solid $gameBorderColor;
+          pointer-events: none;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+.game-wrapper.pause {
+  .pause-overlay {
+    visibility: visible;
+    z-index: 10;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .game-row {
+    visibility: hidden;
+  }
+  .game-outer .game-board {
+    &::after {
+      border-left: 2PX solid $pauseGameBorderColor;
+      border-right: 2PX solid $pauseGameBorderColor;
+    }
+    .out-box {
+      &::after {
+        border-top: 2PX solid $pauseGameBorderColor;
+        border-bottom: 2PX solid $pauseGameBorderColor;
+      }
+    }
+  }
+}
+
+.pause-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  visibility: hidden;
+  z-index: -10;
+  .icon-play-big {
+    position: relative;
+    top: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    .icon-play {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.game-row {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.game-row {
+  // height: 11.11111%;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1;
+  position: relative;
+  &:nth-child(3n) {
+    .game-cell {
+      border-bottom: 0;
+    }
+  }
+  &:nth-child(3n + 4) {
+    .game-cell {
+      // border-top: 1px solid $borderColor;
+    }
+  }
+}

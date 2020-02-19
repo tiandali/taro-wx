@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>icon_play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mainpage-4" transform="translate(-286.000000, -598.000000)">
+            <g id="Main-area" transform="translate(0.000000, 237.000000)">
+                <g id="icon_play" transform="translate(286.000000, 361.000000)">
+                    <circle id="椭圆形" stroke="#4F66EB" stroke-width="8" fill="#FFFFFF" cx="90" cy="90" r="86"></circle>
+                    <path d="M100.976928,72.6813253 L124.094305,105.706151 C125.361163,107.515948 124.921024,110.01007 123.111227,111.276928 C122.438893,111.747562 121.638066,112 120.817378,112 L74.5826222,112 C72.3734832,112 70.5826222,110.209139 70.5826222,108 C70.5826222,107.179312 70.8350607,106.378485 71.3056946,105.706151 L94.4230723,72.6813253 C95.6899303,70.8715281 98.1840522,70.4313889 99.9938494,71.698247 C100.376415,71.9660427 100.709132,72.29876 100.976928,72.6813253 Z" id="三角形备份-2" fill="#4F66EB" transform="translate(97.700000, 90.000000) rotate(-270.000000) translate(-97.700000, -90.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

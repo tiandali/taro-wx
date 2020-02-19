@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mainpage-4" transform="translate(-711.000000, -264.000000)" fill="#9B9B9B">
+            <g id="Main-area" transform="translate(0.000000, 237.000000)">
+                <g id="编组" transform="translate(24.000000, 20.000000)">
+                    <g id="icon_play" transform="translate(678.000000, 1.000000)">
+                        <path d="M18.0617376,10.452172 L25.9004879,20.2506099 C26.590507,21.1131338 26.4506643,22.3717185 25.5881404,23.0617376 C25.2335143,23.3454385 24.7928933,23.5 24.3387503,23.5 L8.66124969,23.5 C7.5566802,23.5 6.66124969,22.6045695 6.66124969,21.5 C6.66124969,21.045857 6.8158112,20.605236 7.09951208,20.2506099 L14.9382624,10.452172 C15.6282815,9.58964815 16.8868662,9.4498054 17.7493901,10.1398245 C17.8647195,10.232088 17.9694741,10.3368426 18.0617376,10.452172 Z" id="三角形" transform="translate(16.500000, 16.000000) rotate(-270.000000) translate(-16.500000, -16.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

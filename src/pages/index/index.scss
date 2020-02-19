@@ -1,0 +1,110 @@
+$color: #5067ed;
+page {
+  height: 100%;
+  width: 100%;
+}
+.index {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  .i_tab_bar.at-tab-bar {
+    padding: 0;
+    .at-tab-bar__item {
+      padding: 10px 12px 0;
+    }
+    .at-tab-bar__title {
+      max-width: 100%;
+      font-size: 22px;
+    }
+  }
+
+  .main-top {
+    margin-top: 40px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
+    visibility: hidden;
+    &-img {
+      width: 80px;
+      height: 80px;
+      // margin-top: 48px;
+      margin-bottom: 32px;
+    }
+    &-txt {
+      font-size: 28px;
+      color: #191b32;
+      letter-spacing: -0.5px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    &-date {
+      font-size: 24px;
+      color: #9b9b9b;
+      letter-spacing: -0.43px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    &-play.at-button {
+      background: #edeef0;
+      border-radius: 32px;
+      font-size: 32px;
+      color: $color;
+      letter-spacing: -0.5px;
+      text-align: center;
+      width: 168px;
+      height: 64px;
+      line-height: 64px;
+      border: 0;
+    }
+  }
+
+  .main-middle {
+    // margin-top: 100px;
+    font-size: 80px;
+    color: $color;
+    letter-spacing: -1px;
+    font-weight: bold;
+    
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: center;
+  }
+
+  .main-bottom {
+    width: 622px;
+    position: absolute;
+    bottom: 64px;
+    .continue-btn.at-button {
+      margin-bottom: 40px;
+      .continue-btn-txt {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .continue-btn-title {
+        line-height: 1;
+        text-align: center;
+        margin-top: 11px;
+      }
+      .continue-btn-desc {
+        line-height: 1;
+        opacity: 0.4;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 11px;
+      }
+    }
+  }
+}

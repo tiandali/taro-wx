@@ -1,0 +1,39 @@
+.setting {
+  &-option {
+    height: 128px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 32px;
+    color: #191b32;
+    &-inner {
+      box-sizing: border-box;
+      height: 100%;
+      border-bottom: 1px solid #efeff4;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &-label {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+  }
+  &-icon-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .sound-effects.at-switch {
+    padding: 0;
+    margin-bottom: 0;
+    &::after {
+      content: none;
+    }
+  }
+}

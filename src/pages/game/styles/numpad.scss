@@ -1,0 +1,27 @@
+.numpad {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    width: 64px;
+    border-radius: 12px;
+    text-align: center;
+    height: 104px;
+    line-height: 104px;
+    font-size: 84px;
+    color: #445da8;
+    text-align: center;
+    &.hide {
+      visibility: hidden;
+    }
+  }
+  &.notes-open {
+    .numpad-item {
+      background: #f4f4f4;
+      color: #9b9b9b;
+      &.hasNote {
+        background: #9b9b9b;
+        color: #f4f4f4;
+      }
+    }
+  }
+}

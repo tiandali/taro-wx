@@ -1,0 +1,131 @@
+@import '../../../config/config.scss';
+@import '~taro-ui/dist/style/components/flex.scss';
+
+:host {
+  width: 100%;
+  height: 100%;
+}
+.game-cell {
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  // flex-basis: 11.1111%;
+  flex: 1;
+  box-sizing: border-box;
+  position: relative;
+  border-right: 1PX solid $borderColor;
+  border-bottom: 1PX solid $borderColor;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  transform: translateZ(0);
+  -webkit-tap-highlight-color: transparent;
+  &:nth-child(3n) {
+    border-right: 0;
+  }
+  &:nth-child(3n + 4) {
+    // border-left: 1px solid $borderColor;
+  }
+  // 错误
+  &.mistake {
+    .cell-value {
+      color: $redNumColor;
+    }
+  }
+  // 选区的背景色
+  &.highlight-table {
+    background-color: $bgHighlightTable;
+  }
+  // 选中某个数字后棋盘内其他相同数字的背景色
+  &.highlight-number {
+    background-color: $bgHighlightNumber;
+  }
+  // 数字冲突
+  &.conflict {
+    background-color: $bgConflict;
+    &:not(.game-value) {
+      .cell-value {
+        color: $redNumColor;
+      }
+    }
+  }
+  // 选中
+  &.cell-selected {
+    background-color: $bgSelected;
+  }
+  // hint提示模式下
+  &.hint-table {
+    background-color: $bgSelected;
+  }
+  &.hint-selected {
+    background-color: #fff;
+  }
+  &.hint-number {
+    background-color: #4fba63;
+    .cell-value {
+      color: #fff;
+    }
+    .pencil-grid-cell {
+      color: #fff;
+    }
+  }
+  &.pause-game {
+    // border-color: #f6f7f9;
+    background-color: #fff;
+    .cell-value {
+      opacity: 0;
+    }
+    .pencil-grid {
+      opacity: 0;
+    }
+  }
+}
+.cell-value {
+  font-size: 60px;
+  text-align: center;
+  color: $numColor;
+  width: 100%;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+.game-value .cell-value {
+  color: $gameNumColor;
+}
+
+.pencil-grid {
+  transition: opacity 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+  display: flex;
+  &-box {
+    flex: 1;
+    padding: 4px;
+  }
+  &-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    // line-height: 20px;
+    color: #7c7c7f;
+    text-align: center;
+    visibility: hidden;
+    &.hasValue {
+      visibility: visible;
+    }
+    &.highlight-note {
+      color: #59b6c2;
+    }
+    &.exclude-note {
+      color: $redNumColor;
+    }
+  }
+}

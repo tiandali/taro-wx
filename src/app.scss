@@ -1,0 +1,32 @@
+// for taro-ui
+$color-brand: #5067ed;
+// button
+@import '~taro-ui/dist/style/components/button.scss';
+@import '~taro-ui/dist/style/components/loading.scss';
+@import '~taro-ui/dist/style/components/tab-bar.scss';
+@import '~taro-ui/dist/style/components/icon.scss';
+@import '~taro-ui/dist/style/components/action-sheet.scss';
+@import '~taro-ui/dist/style/components/modal.scss';
+@import "~taro-ui/dist/style/components/switch.scss";
+@import "~taro-ui/dist/style/components/tabs.scss";
+
+.default-btn.at-button {
+  border: 2px solid $color-brand;
+  font-size: 32px;
+  color: $color-brand;
+  letter-spacing: -0.5px;
+}
+.fill-btn.at-button {
+  border-radius: 48px;
+  background: $color-brand;
+  font-size: 32px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+}
+.at-action-sheet__item,
+.at-action-sheet__footer {
+  font-size: 32px;
+  color: $color-brand;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
